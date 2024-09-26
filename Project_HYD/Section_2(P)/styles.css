@@ -1,0 +1,79 @@
+
+#background{
+    background: url(bg.jpg);
+    background-size: cover;
+}
+#background2{
+    background: url(bg2.avif);
+    background-size: cover;
+}
+#div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+#bonalu_img, #bathukamma_img, #diwali_img, #dussehra_img,#numaish_img {
+    transition: transform 0.5s ease-out;
+    cursor: pointer; 
+    object-fit: cover;
+    border-radius: 15px;
+}
+#bonalu_img:hover, #bathukamma_img:hover, #diwali_img:hover, #dussehra_img:hover, #numaish_img:hover{
+    transform: scale(1.1);
+}
+
+#div2{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 6rem;
+    
+}
+#card_body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -120%;
+    position: absolute;
+    background-color: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s
+    
+}
+#card{
+    height: 20rem;
+    width: 30rem;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 7px solid aliceblue;
+    position: relative;
+}
+#card:hover #card_body{
+    right: 0;
+}
+.heading{
+    font-size: 5rem;
+  background:-webkit-linear-gradient(#f1a9a9,#4951ed);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+@media (max-width:600px) {
+    #div2{
+ 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 6rem;
+        flex-wrap: wrap;
+        
+    } 
+}
+
